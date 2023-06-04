@@ -21,8 +21,8 @@ public class Program
                .ReadFrom.Configuration(builder.Configuration)
                .Enrich.FromLogContext()
                .WriteTo.TeleSink(
-               telegramApiKey: "6145369929:AAHjAWRu28XFwzG3zyAcohEhiUVzSe8euGk",
-               telegramChatId: "619670300",
+               telegramApiKey: "telegramApiKey",
+               telegramChatId: "telegramChatId",
                minimumLevel: LogEventLevel.Error)
                .CreateLogger();
 
